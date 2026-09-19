@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Jumpstart Haven"
-run/main_scene="uid://bf1yjjnr2y71f"
+run/main_scene="uid://choilhlekn30k"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
 

@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://bci8r0scu3mxs"]
+
+[ext_resource type="Texture2D" uid="uid://doxf5ro1ave0v" path="res://Art/Decoration 32x32.png" id="1_d5gmh"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3sy6q"]
+radius = 17.0
+height = 36.0
+
+[node name="Coin" type="Area2D" unique_id=387211628 groups=["Coin"]]
+position = Vector2(575, 387)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1051259880]
+position = Vector2(-1, 5)
+shape = SubResource("CapsuleShape2D_3sy6q")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=267945156]
+position = Vector2(-1, -1)
+texture = ExtResource("1_d5gmh")
+hframes = 9
+vframes = 4
+frame = 2
