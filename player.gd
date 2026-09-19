@@ -4,6 +4,8 @@ extends CharacterBody2D
 const SPEED = 400.0
 const JUMP_VELOCITY = -500.0
 
+var coin_counter = 0
+
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -23,3 +25,11 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	move_and_slide()
+
+func _on_area_2d_area_entered(area: Area2D) -> void:
+	if area.is_in_group("coin"):
+		set_coin(coin_counter + 1)
+		print(coin_counter)
+
+func set_coin(new_coin_count: int) -> void:
+	coin_counter = new_coin_count
