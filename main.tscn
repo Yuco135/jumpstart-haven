@@ -1,5 +1,6 @@
 [gd_scene format=4 uid="uid://bf1yjjnr2y71f"]
 
+[ext_resource type="Script" uid="uid://c6l5rttn24y0y" path="res://player.gd" id="1_h2yge"]
 [ext_resource type="Texture2D" uid="uid://vkhqbhnm7ll8" path="res://icon.svg" id="1_ig7tw"]
 [ext_resource type="Texture2D" uid="uid://cruvwmcs8jqbj" path="res://Art/GandalfHardcore city tiles 32x32.png" id="2_0xm2m"]
 
@@ -326,6 +327,7 @@ sources/0 = SubResource("TileSetAtlasSource_h2yge")
 position = Vector2(107, 71)
 
 [node name="Player" type="CharacterBody2D" parent="." unique_id=840666703]
+script = ExtResource("1_h2yge")
 
 [node name="Sprite2D" type="Sprite2D" parent="Player" unique_id=2114663177]
 texture = ExtResource("1_ig7tw")
