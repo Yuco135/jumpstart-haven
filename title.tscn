@@ -1,5 +1,8 @@
 [gd_scene format=3 uid="uid://choilhlekn30k"]
 
+[ext_resource type="Script" uid="uid://dqeejfibcismw" path="res://title.gd" id="1_oyqm6"]
+[ext_resource type="Texture2D" uid="uid://b0q8uyoq30imm" path="res://Art/new york.jpg" id="1_y7k74"]
+
 [node name="Control" type="Control" unique_id=1211648991]
 layout_mode = 3
 anchors_preset = 15
@@ -7,6 +10,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_oyqm6")
 
 [node name="Title" type="Label" parent="." unique_id=578844262]
 layout_mode = 1
@@ -50,3 +54,11 @@ offset_bottom = -57.5
 grow_horizontal = 2
 grow_vertical = 2
 text = "Start"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1301507625]
+z_index = -6
+position = Vector2(577.75, 321.99997)
+scale = Vector2(0.5992187, 0.5085803)
+texture = ExtResource("1_y7k74")
+
+[connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
