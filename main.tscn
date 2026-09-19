@@ -1,12 +1,12 @@
 [gd_scene format=4 uid="uid://bf1yjjnr2y71f"]
 
 [ext_resource type="Script" uid="uid://c6l5rttn24y0y" path="res://player.gd" id="1_h2yge"]
-[ext_resource type="Texture2D" uid="uid://vkhqbhnm7ll8" path="res://icon.svg" id="1_ig7tw"]
 [ext_resource type="Texture2D" uid="uid://cruvwmcs8jqbj" path="res://Art/GandalfHardcore city tiles 32x32.png" id="2_0xm2m"]
+[ext_resource type="Texture2D" uid="uid://bd15fyv6bpttr" path="res://Art/mamdani photo.jpg" id="2_1bvp3"]
 [ext_resource type="Texture2D" uid="uid://bb6fmajbfekp" path="res://Art/City background.png" id="4_1bvp3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3sy6q"]
-size = Vector2(128, 129)
+size = Vector2(128, 163.5)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h2yge"]
 texture = ExtResource("2_0xm2m")
@@ -332,9 +332,12 @@ position = Vector2(0, 550)
 script = ExtResource("1_h2yge")
 
 [node name="Sprite2D" type="Sprite2D" parent="Player" unique_id=2114663177]
-texture = ExtResource("1_ig7tw")
+position = Vector2(2.2649765e-06, -17.499973)
+scale = Vector2(0.2700422, 0.2534992)
+texture = ExtResource("2_1bvp3")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=479199082]
+position = Vector2(0, -17.25)
 shape = SubResource("RectangleShape2D_3sy6q")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=963383636]
@@ -347,6 +350,6 @@ zoom = Vector2(0.6, 0.6)
 
 [node name="City Background" type="Sprite2D" parent="." unique_id=1919417943]
 z_index = -10
-position = Vector2(-9.000003, 111.15627)
+position = Vector2(-9, 172)
 scale = Vector2(1.8867188, 3.156973)
 texture = ExtResource("4_1bvp3")
