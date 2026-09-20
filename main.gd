@@ -1,7 +1,10 @@
 extends Node2D
 
 var score = 0
+var total_coins = 15
 @onready var score_label = %CoinCount
+
+var time_left = 5
 
 func _ready():
 	for child in get_children():
@@ -11,8 +14,12 @@ func _ready():
 func _on_coin_collected(body):
 	if body.name == "Player":
 		score += 1
-		score_label.text = "Coin Count: %d" % score
+		score_label.text = "Coin Count: %d/15" % score 
 		print("Coin Collected")
+		
+	if score == total_coins: 
+		print("You win")
+		get_tree().change_scene_to_file("res://win_screen.tscn")
 
 func do():
 	var timer = Timer.new()

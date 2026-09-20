@@ -4,8 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://doxf5ro1ave0v" path="res://Art/Decoration 32x32.png" id="1_d5gmh"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3sy6q"]
-radius = 17.0
-height = 36.0
+radius = 31.0
+height = 64.0
 
 [sub_resource type="Animation" id="Animation_0t63x"]
 resource_name = "Falling Trash"
@@ -20,11 +20,12 @@ position = Vector2(575, 387)
 script = ExtResource("1_0t63x")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1051259880]
-position = Vector2(-1, 5)
+position = Vector2(12, 4)
 shape = SubResource("CapsuleShape2D_3sy6q")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=267945156]
-position = Vector2(-1, -1)
+position = Vector2(11.5, -8.5)
+scale = Vector2(1.78125, 1.46875)
 texture = ExtResource("1_d5gmh")
 hframes = 9
 vframes = 4

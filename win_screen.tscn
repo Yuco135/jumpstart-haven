@@ -1,0 +1,68 @@
+[gd_scene format=3 uid="uid://d547rtfy3t8j"]
+
+[ext_resource type="Texture2D" uid="uid://cx1cd3n5iv45f" path="res://Art/happy mamdani.jpg" id="1_l2arl"]
+[ext_resource type="Script" uid="uid://rrytf2lf56lc" path="res://win_screen.gd" id="1_wmwda"]
+
+[node name="Control" type="Control" unique_id=611667678]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_wmwda")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1503989069]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -360.25
+offset_top = 75.0
+offset_right = 360.25
+offset_bottom = 116.0
+grow_horizontal = 2
+theme_override_font_sizes/normal_font_size = 30
+text = "You win you saved new york thank you mamdani"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1252885940]
+z_index = -5
+position = Vector2(577, 325)
+scale = Vector2(0.80694443, 0.7207829)
+texture = ExtResource("1_l2arl")
+
+[node name="Restart" type="Button" parent="." unique_id=340903234]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -51.5
+offset_top = -172.5
+offset_right = 51.5
+offset_bottom = -129.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 25
+text = "Restart "
+
+[node name="Main Menu" type="Button" parent="." unique_id=1442092943]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -75.5
+offset_top = -108.5
+offset_right = 75.5
+offset_bottom = -65.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 25
+text = " Main Menu
+"
+
+[connection signal="pressed" from="Restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="Main Menu" to="." method="_on_main_menu_pressed"]
