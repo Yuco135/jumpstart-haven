@@ -38,7 +38,7 @@ offset_right = 163.5
 offset_bottom = -135.5
 grow_horizontal = 2
 grow_vertical = 2
-text = "Be the best mayor of nyc by collecting tras"
+text = "Be the best mayor of nyc by collecting trash"
 
 [node name="Start" type="Button" parent="." unique_id=119823394]
 layout_mode = 1
